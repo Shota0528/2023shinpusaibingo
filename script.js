@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const row = document.createElement('tr');
             for (let j = 0; j < 15; j++) {
                 const cell = document.createElement('td');
-                const number = j * 5 + i + 1;
+                const number = i * 15 + j + 1;
                 cell.innerText = number;
                 if (drawnNumbers.includes(number)) {
                     if (drawnNumbers.indexOf(number) === drawnNumbers.length - 1) {
